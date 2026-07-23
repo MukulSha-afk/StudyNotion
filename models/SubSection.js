@@ -1,18 +1,18 @@
-const mongoose = reuire("mongoose");
-const subSectionSchema = new mongoose.Schema({
-    tile:{
-            type:String,
-    },
-    timeDuration:{
+const mongoose = require("mongoose");
+
+const subSectionSchema = new mongoose.Schema({  
+    title:{
         type:String,
     },
-    description:{
+    timeDuration: {
+        type: String,
+    },
+    description: {
         type:String,
-       
     },
     videoUrl:{
         type:String,
     },
 });
 
-module.exports = mongoose.model("subSectionSchema",subSectionSchema);
+module.exports = mongoose.model("SubSection", subSectionSchema);
